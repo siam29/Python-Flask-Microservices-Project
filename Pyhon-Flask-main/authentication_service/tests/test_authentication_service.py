@@ -65,7 +65,7 @@ def test_validate_token_invalid(client, monkeypatch):
     data = response.get_json()
     assert data["error"] == "Invalid or expired token"
 
-'''
+
 def test_validate_token_not_found(client, monkeypatch):
     """Test validation with a token not found in tokens.json."""
     # Mock the decode_jwt function to return a valid payload
@@ -93,7 +93,7 @@ def test_validate_token_not_found(client, monkeypatch):
     assert response.status_code == 404
     data = response.get_json()
     assert data["error"] == "Token not found"
-    '''
+    
 
 def test_validate_missing_token(client):
     """Test validation with a missing token in the request body."""
