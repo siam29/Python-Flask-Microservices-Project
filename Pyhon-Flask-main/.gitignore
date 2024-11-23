@@ -1,0 +1,37 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment directories
+env/
+venv/
+ENV/
+.venv/
+python-env-file/
+.python-version
+
+# Ignore Flask environment file
+.env
+
+# Ignore log files and temp files
+*.log
+*.sqlite3
+*.tmp
+*.pid
+*.seed
+
+# Ignore compiled code
+*.py[co]
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore other files/directories specific to your project
+instance/
