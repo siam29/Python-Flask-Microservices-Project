@@ -187,13 +187,16 @@ Collect **token** from `user_service` directory in `tokens.json` file and authen
 
 ```bash
 git clone https://github.com/siam29/Python-Flask-Microservices-Project.git
-cd Pyhon-Flask-main
 ```
 
 ### 2. **Activate the Virtual Environment**
 
 ```
 source venv/bin/activate
+```
+### 3. **Main Directory**
+```
+cd Pyhon-Flask-main
 ```
 
 ## ▶️ How to Run each micro service
