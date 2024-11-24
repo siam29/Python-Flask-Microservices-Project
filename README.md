@@ -144,13 +144,67 @@ Collect **token** from `user_service` directory in `tokens.json` file and authen
 
 ---
 
-## ⚙️ Setup Guide
+# ⚙️ Setup Guide
 
 ### 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/your-repo/python-flask-main.git
+git clone https://github.com/siam29/Python-Flask-Microservices-Project.git
 cd python-flask-main
+```
+
+### 2. **Activate the Virtual Environment**
+
+```
+source venv/bin/activate
+```
+
+## ▶️ How to Run each micro service
+
+### 1. **Destination Service:**
+
+```
+cd destination_service
+python app.py
+```
+
+### 2. **User Service:**
+
+```
+cd user_service
+python app.py
+```
+
+### 3. **Authentication Service**
+
+```
+cd authentication_service
+python app.py
+```
+
+## 🧪 Testing
+
+### Run Specific Service Tests
+
+### 1. **Destination Service**
+
+```
+cd destination_service/tests
+pytest test_destination_service.py
+```
+
+### 2. **User Service**
+
+```
+cd user_service/tests
+pytest test_register.py
+```
+
+### 3. **Authentication Service**
+
+```
+cd authentication_service/tests
+pytest test_authentication_service.py
 ```
 
 ---
@@ -162,3 +216,17 @@ cd python-flask-main
 - Pytest: Testing Framework.
 - JWT: JSON Web Token for authentication.
 - JSON: Data storage for persistence.
+
+### 🔮 Future Enhancements
+
+- Transition from JSON to a relational database (e.g., SQLite, PostgreSQL).
+- Implement role-based access control (RBAC) for improved security.
+- Add Docker support for containerization.
+- Expand unit testing for edge cases.
+
+### 👤 Author
+
+- **GitHub**: [https://github.com/siam29](https://github.com/siam29)
+- **LinkedIn**: [https://www.linkedin.com/in/almahmud-siam-382a19206/](https://www.linkedin.com/in/almahmud-siam-382a19206/)
+
+Feel free to connect and collaborate!
