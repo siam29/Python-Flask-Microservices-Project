@@ -122,6 +122,24 @@ Handles user registration and login processes.
 - User information persistence in `users.json`.
 - Role-based data handling for user profiles.
 
+```
+[
+    {
+        "name": "John Doe",
+        "email": "john@example.com",
+        "password": "$2b$12$GTG4OHpbXbv3B0G95pwaY.kSNps7Ef3NrFRABq/zxPKuX3k5Kdim.",
+        "role": "User",
+        "created_at": "2024-11-24T15:31:09.721546+00:00"
+    },
+    {
+        "name": "kamran malik",
+        "email": "kamran@example.com",
+        "password": "$2b$12$drhamFBcjVPKujragFgC0Oqk8ajlb643HfoOa.hcUJF0V.1cSq6Xi",
+        "role": "Admin",
+        "created_at": "2024-11-24T15:32:40.600193+00:00"
+    }
+]
+```
 #### **Test File **
 
 - `test_register.py`
