@@ -9,37 +9,41 @@ Each service operates **independently** with its own routes, models, and dedicat
 ## 🗂️ Folder Structure
 
 ```
-Python-Flask-Main
-│
-├── authentication_service
-│   ├── app.py
-│   ├── models.py
-│   ├── routes.py
-│   └── tests
-│       └── test_authentication_service.py
-│
-├── destination_service
-│   ├── app.py
-│   ├── controllers
-│   │   └── destination_controller.py
-│   ├── models
-│   │   └── destination_model.py
-│   ├── routes
-│   │   └── destination_routes.py
-│   └── tests
-│       └── test_destination_service.py
-│
-├── user_service
-│   ├── app.py
-│   ├── models
-│   │   └── models.py
-│   ├── routes
-│   │   └── routes.py
-│   └── tests
-│       └── test_register.py
-│
-├── README.md
-└── requirements.txt
+Python-Flask-Microservices-Project
+|
+├── Python-Flask-Main
+│   |  
+|   ├── authentication_service
+│   |        ├── app.py
+│   |        ├── models.py
+│   |        ├── routes.py
+│   |        └── tests
+│   |              └── test_authentication_service.py
+│   |
+|   ├──  destination_service
+│   |          ├── app.py
+│   |          ├── controllers
+│   |          │       └── destination_controller.py
+│   |          ├── models
+│   |          │       └── destination_model.py
+│   |          │
+|   |          ├── routes
+|   |          |       └── destination_routes.py         
+│   |          └── tests
+│   |                  └── test_destination_service.py
+│   |
+|   └──  user_service
+│   |       ├── app.py
+│   |       ├── models
+│   |       │       └── models.py
+│   |       ├── routes
+│   |       │       └── routes.py
+│   |       └── tests
+│   |               └── test_register.py
+|   │
+|    ├── README.md
+|    └── t.txt
+└──  venv
 ```
 
 ---
@@ -118,7 +122,7 @@ Handles user registration and login processes.
 - User information persistence in `users.json`.
 - Role-based data handling for user profiles.
 
-#### **Test File**
+#### **Test File **
 
 - `test_register.py`
 
