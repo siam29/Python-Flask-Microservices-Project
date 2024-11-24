@@ -120,9 +120,11 @@ Handles user registration and login processes.
 
 - Secure password hashing with `bcrypt`.
 - User information persistence in `users.json`.
+- User token in `tokens.json`
 - Role-based data handling for user profiles.
 
 ```
+users.json
 [
     {
         "name": "John Doe",
@@ -137,6 +139,19 @@ Handles user registration and login processes.
         "password": "$2b$12$drhamFBcjVPKujragFgC0Oqk8ajlb643HfoOa.hcUJF0V.1cSq6Xi",
         "role": "Admin",
         "created_at": "2024-11-24T15:32:40.600193+00:00"
+    }
+]
+```
+```
+tokens.json
+[
+    {
+        "email": "john@example.com",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG5AZXhhbXBsZS5jb20iLCJyb2xlIjoiVXNlciIsImV4cCI6MTczMjQ4MDI5NCwiaWF0IjoxNzMyNDYyMjk0fQ.xodlKM7KKhycwSgiO9d_2ZAP7uxWo1-klLV8RsjrzL8"
+    },
+    {
+        "email": "kamran@example.com",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthbXJhbkBleGFtcGxlLmNvbSIsInJvbGUiOiJBZG1pbiIsImV4cCI6MTczMjQ4MDM3OSwiaWF0IjoxNzMyNDYyMzc5fQ.Ppnp3LT1-8vkDQL5ZBbau2cotQObMRWoxkaP0_WiUFk"
     }
 ]
 ```
