@@ -174,6 +174,9 @@ Collect **token** from `user_service` directory in `tokens.json` file and authen
 - Generates JWT tokens upon login.
 - Validates and decodes JWT tokens.
 - Manages tokens persistently in `tokens.json`.
+![Alt text](aut.png)
+![Alt text](aut1.png)
+
 
 #### **Test File**
 
