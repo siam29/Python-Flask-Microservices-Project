@@ -39,6 +39,7 @@ def register():
       400:
         description: Missing required fields
     """
+    
     data = request.get_json()
     if not data or not all(k in data for k in ("name", "email", "password", "role")):
         return jsonify({"error": "Missing required fields"}), 400

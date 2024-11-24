@@ -16,19 +16,25 @@ def client():
         yield client
 
 @pytest.fixture(autouse=True)
+
 def clear_users():
-    """Reset the users list before each test."""
-    users.clear()  # Clear the users list to ensure a clean state for each test
+    """Reset the users list and clear the users.json file before each test."""
+    global users
+    users.clear()  # Clear the in-memory list
+
+    # Clear the users.json file
+    users_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "models", "users.json"))
+    if os.path.exists(users_file_path):
+        with open(users_file_path, "w") as file:
+            json.dump([], file)
 
 def test_register_success(client):
     """Test successful user registration."""
     # Prepare the payload
     payload = {
-        "name": "Alice",
-        "email": "alice@example.com",
-        "password": "password123",
-        "role": "User"
+        
     }
+    
 
     # Send a POST request to the /register endpoint
     response = client.post('/users/register', data=json.dumps(payload), content_type='application/json')
@@ -44,7 +50,7 @@ def test_register_success(client):
     assert data["message"] == "User registered successfully"
 
 
-'''
+
 
 
 def test_register_duplicate_email(client):
@@ -74,14 +80,3 @@ def test_register_missing_fields(client):
     data = response.get_json()
     assert "error" in data
     assert data["error"] == "Missing required fields"
-
-def test_register_invalid_json(client):
-    """Test registration with invalid JSON payload."""
-    payload = "Invalid JSON"  # Not a JSON object
-    response = client.post('/users/register', data=payload, content_type='application/json')
-    assert response.status_code == 400
-    data = response.get_json()
-    assert "error" in data
-    assert data["error"] == "Invalid JSON format"
-
-    '''

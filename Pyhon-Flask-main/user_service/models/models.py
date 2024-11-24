@@ -7,7 +7,7 @@ from datetime import datetime, timezone  # Import timezone
 
 
 # In-memory storage for users
-users = []
+#users = []
 
 # Secret key for signing JWT tokens
 SECRET_KEY = "your_secret_key"
@@ -36,14 +36,14 @@ def load_users():
     except json.JSONDecodeError:
         print(f"Error decoding {USERS_FILE}. Initializing an empty list.")
         users = []
-
+'''
 # Function to save users to the JSON file
 def save_users():
     with open(USERS_FILE, "w") as file:
         json.dump(users, file, indent=4)
 
-        '''
-
+'''
+'''
 # Function to register a user
 def register_user(name, email, password, role):
     for user in users:
@@ -60,27 +60,45 @@ def register_user(name, email, password, role):
     save_users()  # Save updated users list to file
     return new_user
 
-    
     '''
         
 
-        users = []  # This should be the global list to hold user data
+        #users = []  # This should be the global list to hold user data
 
 def register_user(name, email, password, role):
     """Register a new user if the email is not already taken."""
-    global users
+    global users  # Ensure we modify the global `users` list
     for user in users:
         if user["email"] == email:
             return None  # Email already exists
+
     new_user = {
         "name": name,
         "email": email,
         "password": hash_password(password),
         "role": role,
-        "created_at": datetime.now(timezone.utc).isoformat()
+        "created_at": datetime.now(timezone.utc).isoformat()  # Use timezone-aware timestamp
     }
     users.append(new_user)
+    
+    try:
+        save_users()  # Save the updated users list to `users.json`
+        print(f"User {email} saved successfully to users.json")  # Debug log
+    except Exception as e:
+        print(f"Error saving user {email}: {e}")  # Debug log for errors
+
     return new_user
+
+
+def save_users():
+    """Save the users list to the JSON file."""
+    try:
+        with open(USERS_FILE, "w") as file:
+            json.dump(users, file, indent=4)
+        print(f"Saved users to {USERS_FILE}")  # Debug log
+    except Exception as e:
+        print(f"Error saving users: {e}")  # Debug log for save errors
+
 
 # Function to authenticate a user
 def authenticate_user(email, password):

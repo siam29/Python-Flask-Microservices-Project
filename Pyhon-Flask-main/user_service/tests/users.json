@@ -2,15 +2,8 @@
     {
         "name": "Alice",
         "email": "alice@example.com",
-        "password": "$2b$12$UAnqH/J6SUY7nwtksbEsje4cic2F/AC.angTqyzfNdoNw7F2AJLMm",
+        "password": "$2b$12$q/rLCg0myl9MZ0NJdP4DqOuO7krWkOY4F5TQ7hwCcuXr0bfVzmc4O",
         "role": "User",
-        "created_at": "2024-11-23T16:38:45.283349Z"
-    },
-    {
-        "name": "John Doe",
-        "email": "john@example.com",
-        "password": "$2b$12$ldCQ5rLKJnAz5VcXzxEF7eGVQ1HGBgmmVmzVc0cv/.YQMefPLYHsi",
-        "role": "User",
-        "created_at": "2024-11-23T16:38:45.546273Z"
+        "created_at": "2024-11-24T16:59:35.335665+00:00"
     }
 ]

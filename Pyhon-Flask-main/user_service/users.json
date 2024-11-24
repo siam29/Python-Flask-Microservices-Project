@@ -2,29 +2,15 @@
     {
         "name": "John Doe",
         "email": "john@example.com",
-        "password": "$2b$12$7q4PdGiWjHQhMdfKlZ3zheCgW/KRnoqWTF7TGUd2T/1hUai57jQnm",
+        "password": "$2b$12$GTG4OHpbXbv3B0G95pwaY.kSNps7Ef3NrFRABq/zxPKuX3k5Kdim.",
         "role": "User",
-        "created_at": "2024-11-23T10:00:00Z"
+        "created_at": "2024-11-24T15:31:09.721546+00:00"
     },
     {
-        "name": "Alice",
-        "email": "alice@example.com",
-        "password": "$2b$12$/eCks..FcvnidikWR4JAxOED59uk4TWnRcy./4ALd4/daB/8wXfD2",
-        "role": "User",
-        "created_at": "2024-11-23T14:15:32.424945"
-    },
-    {
-        "name": "mam",
-        "email": "mam@example.com",
-        "password": "$2b$12$b7tVkExgoaHQeuY1HRbvl.Iev9psFDlfbLhcE1zwEQPrLAm/HXA5a",
-        "role": "User",
-        "created_at": "2024-11-23T14:16:43.696838"
-    },
-    {
-        "name": "milonDoe",
-        "email": "milon@example.com",
-        "password": "$2b$12$kqagBFgR/JyZiyELoeMI8urkwwUfyDtWxexHoi2hE4YRaUpNHWhMe",
-        "role": "User",
-        "created_at": "2024-11-23T14:40:15.940224Z"
+        "name": "kamran malik",
+        "email": "kamran@example.com",
+        "password": "$2b$12$drhamFBcjVPKujragFgC0Oqk8ajlb643HfoOa.hcUJF0V.1cSq6Xi",
+        "role": "Admin",
+        "created_at": "2024-11-24T15:32:40.600193+00:00"
     }
 ]
