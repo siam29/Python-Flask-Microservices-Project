@@ -41,8 +41,8 @@ Python-Flask-Microservices-Project
 │   |       └── tests
 │   |               └── test_register.py
 |   │
-|   ├── README.md
 |   └── t.txt
+├── README.md   
 └──  venv
 ```
 
