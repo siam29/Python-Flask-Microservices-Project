@@ -99,11 +99,13 @@ def login():
             return jsonify({"error": "Invalid email or password"}), 401
 
         # Include the role in the JWT
+        # print(user["password"])
         token = generate_jwt(data["email"], user["role"])
         return jsonify({"message": "Login successful", "token": token}), 200
     except Exception as e:
         print(f"Error during login: {e}")  # Debug log
         return jsonify({"error": "Internal server error"}), 500
+
 
 # Route: Get user profile (protected with JWT)
 @user_routes.route('/profile', methods=['GET'])

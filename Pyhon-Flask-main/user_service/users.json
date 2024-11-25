@@ -12,5 +12,82 @@
         "password": "$2b$12$drhamFBcjVPKujragFgC0Oqk8ajlb643HfoOa.hcUJF0V.1cSq6Xi",
         "role": "Admin",
         "created_at": "2024-11-24T15:32:40.600193+00:00"
+    },
+    {
+        "name": "Mollik Saha",
+        "email": "mollik@example.com",
+        "password": "$2b$12$adCnYLzZeKum5WpNCkAFZeRs0B5CqABw0GRi5.ZOMHDoiKzEAcSq2",
+        "role": "User",
+        "created_at": "2024-11-25T04:25:28.971560+00:00"
+    },
+    {
+        "name": "Karim Khan",
+        "email": "karim@example.com",
+        "password": "$2b$12$sXyHZDt/kWMvt92YyhA/Hegbo6NSwfYpADtPlCLNmZGywI8Hu3j46",
+        "role": "Admin",
+        "created_at": "2024-11-25T04:30:44.847301+00:00"
+    },
+    {
+        "name": "John Doe",
+        "email": "1@example.com",
+        "password": "$2b$12$DFpsbZxbmJCbTMWrqzk7E.fzPuaDg/GDv/EInHGMrbkZU8mst7vPm",
+        "role": "User",
+        "created_at": "2024-11-25T04:51:37.801580+00:00"
+    },
+    {
+        "name": "John Doe",
+        "email": "2@example.com",
+        "password": "$2b$12$ICtTvmG4HL7CkLp4/4pX8.u0DOoPHCziKI/zxgivPpSUkb8QFNTpm",
+        "role": "User",
+        "created_at": "2024-11-25T04:55:37.594081Z"
+    },
+    {
+        "name": "John Doe",
+        "email": "3@example.com",
+        "password": "$2b$12$lcJcEqk/UwtdK.PiKxe1OuVkI3rq4ZgUVAP51GW5eFvvt/vERuWmO",
+        "role": "User",
+        "created_at": "2024-11-25T05:02:27.625699+00:00"
+    },
+    {
+        "name": "John Doe",
+        "email": "4@example.com",
+        "password": "$2b$12$Me1q/XFGopJ73IXNO6WxVOJXEI1DZxmO.TrYWV.e4hg0OipaBBxPO",
+        "role": "User",
+        "created_at": "2024-11-25T06:25:39.427518+00:00"
+    },
+    {
+        "name": "John Doe",
+        "email": "6@example.com",
+        "password": "$2b$12$5oDgOBxLTd9vxgEKvnALnejpHpMZ2DksxYezIiJB./4ELUfBdewpW",
+        "role": "User",
+        "created_at": "2024-11-25T06:32:32.203532+00:00"
+    },
+    {
+        "name": "John Doe",
+        "email": "8@example.com",
+        "password": "$2b$12$xCGqrYV8ZfGKkFO5aDgk7uqnE5F3bZ5l0hZaCpQaL6v2Z4x2V560C",
+        "role": "User",
+        "created_at": "2024-11-25T06:33:41.982981+00:00"
+    },
+    {
+        "name": "John Doe",
+        "email": "a@example.com",
+        "password": "$2b$12$A2uMrEwIRAY0XHU043tpwOjDmib1RTJhwzxGkIbzq3yVOWMbQOffe",
+        "role": "User",
+        "created_at": "2024-11-25T06:50:15.543021+00:00"
+    },
+    {
+        "name": "John Doe",
+        "email": "b@example.com",
+        "password": "$2b$12$NZQbh7EmxfcwbXl9.WIJM.9s0eW7hmQIyOYxbHqe7fAVPlLZmS8Jy",
+        "role": "User",
+        "created_at": "2024-11-25T07:05:39.319144+00:00"
+    },
+    {
+        "name": "John Doe",
+        "email": "c@example.com",
+        "password": "$2b$12$UKXnv4x52jU1zEiYM/ENuO7tiYgJv2r15MAiXLXRNtjFAkaFWiNwe",
+        "role": "User",
+        "created_at": "2024-11-25T07:19:31.402471+00:00"
     }
 ]

@@ -1,9 +1,9 @@
-import hashlib
+# import hashlib
 import jwt
 import json
 import bcrypt
-from datetime import datetime, timedelta
-from datetime import datetime, timezone  # Import timezone
+from datetime import datetime, timedelta, timezone
+# from datetime import datetime,   # Import timezone
 
 
 # In-memory storage for users
@@ -16,13 +16,16 @@ SECRET_KEY = "your_secret_key"
 TOKEN_FILE = "tokens.json"
 USERS_FILE = "users.json"
 
+
 # Hash a password securely
 def hash_password(password):
     return bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
 
+
 # Verify a hashed password
 def verify_password(password, hashed_password):
     return bcrypt.checkpw(password.encode(), hashed_password.encode())
+
 
 # Function to load users from the JSON file
 def load_users():
@@ -107,6 +110,7 @@ def authenticate_user(email, password):
             return user
     return None
 
+
 # Function to generate a JWT token with role
 def generate_jwt(email, role):
     payload = {
@@ -119,15 +123,19 @@ def generate_jwt(email, role):
     save_token(email, token)
     return token
 
+
 # Function to decode and validate a JWT token
 def decode_jwt(token):
     try:
+        # print(SECRET_KEY)
         payload = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        print("Decoded Payload:", payload)  # Debug: Print the decoded payload
         return payload
     except jwt.ExpiredSignatureError:
         return None  # Token has expired
     except jwt.InvalidTokenError:
         return None  # Invalid token
+
 
 # Function to save a token in the JSON file
 def save_token(email, token):
@@ -143,6 +151,7 @@ def save_token(email, token):
     with open(TOKEN_FILE, "w") as file:
         json.dump(tokens, file, indent=4)
 
+
 # Function to retrieve a token from the JSON file
 def get_token(email):
     try:
@@ -155,12 +164,14 @@ def get_token(email):
         return None
     return None
 
+
 # Function to retrieve a user's profile by email
 def get_user_profile(email):
     for user in users:
         if user["email"] == email:
             return {"name": user["name"], "email": user["email"], "role": user["role"]}
     return None
+
 
 # Load users at startup
 load_users()
