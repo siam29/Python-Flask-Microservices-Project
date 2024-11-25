@@ -195,6 +195,7 @@ git clone https://github.com/siam29/Python-Flask-Microservices-Project.git
 ### 2. **Activate the Virtual Environment**
 
 ```
+python3 -m venv venv
 source venv/bin/activate
 ```
 ### 3. **Main Directory**
