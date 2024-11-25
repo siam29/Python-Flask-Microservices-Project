@@ -22,7 +22,7 @@ python-env-file/
 *.tmp
 *.pid
 *.seed
-
+*venv
 # Ignore compiled code
 *.py[co]
 
