@@ -201,6 +201,10 @@ source venv/bin/activate
 ```
 cd Pyhon-Flask-main
 ```
+### 4. **Install required dependencies**
+```
+pip install -r t.txt
+```
 
 ## ▶️ How to Run each micro service
 
