@@ -219,6 +219,7 @@ python app.py
 
 ```
 cd user_service
+pip install bcrypt
 python app.py
 ```
 
@@ -237,6 +238,7 @@ python app.py
 
 ```
 cd destination_service/tests
+pip install pytest
 pytest test_destination_service.py
 ```
 
