@@ -256,6 +256,10 @@ pytest test_register.py
 cd authentication_service/tests
 pytest test_authentication_service.py
 ```
+### 4. Code run on swagger
+```
+http://127.0.0.1:5000/apidocs/
+```
 
 ---
 
